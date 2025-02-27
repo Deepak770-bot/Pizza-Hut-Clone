@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Hut - Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="logo.png.webp" alt="Pizza Hut">
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Deals</a></li>
+                <li><a href="#">Locations</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <a href="#" class="order-btn">Order Now</a>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    </header>
+
+     <!-- Hero Section -->
+     <section class="hero">
+        <div class="hero-content">
+            <h1>Hot & Fresh Pizzas Delivered to You!</h1>
+            <p>Savor the taste of authentic, cheesy perfection. Order now and enjoy exclusive deals!</p>
+            <a href="#" class="order-btn">Order Now</a>
+        </div>
+    </section>
+
+      <!-- Featured Deals Section -->
+      <section class="featured">
+        <h2>🔥 Featured Deals 🔥</h2>
+        <div class="deal-container">
+            <div class="deal-card">
+                <img src="pizza-1.jpg" alt="Buy 1 Get 1 Free">
+                <h3>Buy 1 Get 1 Free</h3>
+                <p>Order any large pizza and get another one absolutely free!</p>
+                <a href="#" class="order-btn">Order Now</a>
+            </div>
+            <div class="deal-card">
+                <img src="pizza-2.jpg" alt="Family Combo">
+                <h3>Family Combo</h3>
+                <p>2 Large Pizzas + 4 Drinks + Garlic Bread at a special price!</p>
+                <a href="#" class="order-btn">Order Now</a>
+            </div>
+            <div class="deal-card">
+                <img src="pizza-3.jpg" alt="Weekend Special">
+                <h3>Weekend Special</h3>
+                <p>Get a free dessert with any 2 medium pizzas this weekend!</p>
+                <a href="#" class="order-btn">Order Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Highlights Section -->
+    <section class="menu">
+        <h2>🍕 Menu Highlights 🍕</h2>
+        <div class="menu-container">
+            <div class="menu-item">
+                <img src="pizza-4.jpg" alt="Pepperoni Pizza">
+                <h3>Pepperoni Pizza</h3>
+                <p>Loaded with spicy pepperoni and extra cheese.</p>
+                <a href="#" class="order-btn">Add to Cart</a>
+            </div>
+            <div class="menu-item">
+                <img src="pizza-5.jpg" alt="BBQ Chicken Pizza">
+                <h3>BBQ Chicken Pizza</h3>
+                <p>Grilled chicken, BBQ sauce, and melted mozzarella.</p>
+                <a href="#" class="order-btn">Add to Cart</a>
+            </div>
+            <div class="menu-item">
+                <img src="pizza-6.jpg" alt="Veggie Supreme">
+                <h3>Veggie Supreme</h3>
+                <p>Fresh veggies, olives, and a cheesy blend.</p>
+                <a href="#" class="order-btn">Add to Cart</a>
+            </div>
+        </div>
+    </section>
+
+     <!-- Menu Preview Section -->
+     <section class="menu-preview">
+        <h2>🍕 Menu Preview 🍕</h2>
+        <div class="menu-container">
+            <div class="menu-item">
+                <img src="pizza-5.jpg" alt="Margherita Pizza">
+                <h3>Margherita Pizza</h3>
+                <p>Classic delight with mozzarella & tomato sauce.</p>
+                <span class="price">$9.99</span>
+                <a href="#" class="order-btn">Order Now</a>
+            </div>
+            <div class="menu-item">
+                <img src="pizza-2.jpg" alt="Pepperoni Pizza">
+                <h3>Pepperoni Pizza</h3>
+                <p>Loaded with spicy pepperoni & extra cheese.</p>
+                <span class="price">$11.99</span>
+                <a href="#" class="order-btn">Order Now</a>
+            </div>
+            <div class="menu-item">
+                <img src="hero-image.jpg" alt="BBQ Chicken Pizza">
+                <h3>BBQ Chicken Pizza</h3>
+                <p>Grilled chicken, BBQ sauce & melted cheese.</p>
+                <span class="price">$12.99</span>
+                <a href="#" class="order-btn">Order Now</a>
+            </div>
+            <div class="menu-item">
+                <img src="pizza-6.jpg" alt="Veggie Supreme">
+                <h3>Veggie Supreme</h3>
+                <p>Fresh veggies, olives & cheesy blend.</p>
+                <span class="price">$10.99</span>
+                <a href="#" class="order-btn">Order Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Limited-Time Offers Section -->
+    <section class="limited-offers">
+        <h2>🔥 Limited-Time Offers 🔥</h2>
+        <div class="offers-container">
+            <div class="offer-card">
+                <img src="pizza-2.jpg" alt="Super Saver Combo">
+                <h3>Super Saver Combo</h3>
+                <p>Get 2 Large Pizzas + 2 Sides at just <span class="price">$19.99</span>!</p>
+                <span class="offer-timer">⏳ Offer ends in: <span id="timer1"></span></span>
+                <a href="#" class="order-btn">Order Now</a>
+            </div>
+            <div class="offer-card">
+                <img src="pizza-5.jpg" alt="Cheesy Delight">
+                <h3>Cheesy Delight</h3>
+                <p>Extra cheese on any pizza for free! Limited time only.</p>
+                <span class="offer-timer">⏳ Offer ends in: <span id="timer2"></span></span>
+                <a href="#" class="order-btn">Order Now</a>
+            </div>
+            <div class="offer-card">
+                <img src="pizza-6.jpg" alt="Weekend Special">
+                <h3>Weekend Special</h3>
+                <p>Buy 1, Get 1 Free on Medium Pizzas this weekend!</p>
+                <span class="offer-timer">⏳ Offer ends in: <span id="timer3"></span></span>
+                <a href="#" class="order-btn">Order Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location & Delivery Section -->
+    <section class="location-delivery">
+        <h2>📍 Find Us & Get Your Pizza Delivered 🚀</h2>
+        <div class="location-container">
+            <!-- Google Maps Embed -->
+            <div class="map">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387190.27991470215!2d-74.2598678836567!3d40.69767006731192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2f6dfdfbd7247%3A0x16e29f5b8e6b38e1!2sPizza%20Hut!5e0!3m2!1sen!2sus!4v1700000000000" 
+                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+
+            <!-- Delivery Options -->
+            <div class="delivery-options">
+                <div class="delivery-card">
+                    <img src="delivery-bike.png" alt="Fast Delivery">
+                    <h3>Super Fast Delivery</h3>
+                    <p>Get your hot & fresh pizza delivered in just 30 minutes!</p>
+                </div>
+                <div class="delivery-card">
+                    <img src="pickup.png" alt="Takeaway">
+                    <h3>Takeaway Available</h3>
+                    <p>Order online and pick up your pizza at your nearest Pizza Hut outlet.</p>
+                </div>
+                <div class="delivery-card">
+                    <img src="contactless.png" alt="Contactless Delivery">
+                    <h3>Contactless Delivery</h3>
+                    <p>Safety first! Enjoy a contact-free delivery experience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Customer Reviews Section -->
+     <section class="customer-reviews">
+        <h2>⭐ Customer Reviews ⭐</h2>
+        <div class="reviews-container">
+            <div class="review-card">
+                <img src="review-1.jpg" alt="Customer 1">
+                <h3>John Doe</h3>
+                <p>"Best pizza ever! The crust is crispy, and the toppings are fresh. Highly recommend!"</p>
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+            </div>
+            <div class="review-card">
+                <img src="review-2.jpeg" alt="Customer 2">
+                <h3>Sarah Smith</h3>
+                <p>"The delivery was super fast, and the pizza was still hot. Great service!"</p>
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+            </div>
+            <div class="review-card">
+                <img src="review-3.jpg" alt="Customer 3">
+                <h3>Michael Brown</h3>
+                <p>"Love the cheese burst pizza! The flavors are just amazing. 10/10!"</p>
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section class="contact-us">
+        <h2>📞 Contact Us</h2>
+        <div class="contact-container">
+
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <h3>Get in Touch</h3>
+                <form action="#" method="post">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+
+            <!-- Contact Details -->
+            <div class="contact-details">
+                <h3>Visit Us</h3>
+                <p>📍 123 Pizza Street, New York, NY 10001</p>
+                <p>📞 +1 800-555-PIZZA</p>
+                <p>📧 contact@pizzahut.com</p>
+
+                <!-- Google Maps Embed -->
+                <div class="map">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387190.27991470215!2d-74.2598678836567!3d40.69767006731192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2f6dfdfbd7247%3A0x16e29f5b8e6b38e1!2sPizza%20Hut!5e0!3m2!1sen!2sus!4v1700000000000" 
+                        width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+
+            <!-- Logo & About -->
+            <div class="footer-about">
+                <img src="logo.png.webp" alt="Pizza Hut Logo">
+                <p>Delicious pizzas, fast delivery, and great offers. Experience the best at Pizza Hut!</p>
+            </div>
+
+            <!-- Navigation Links -->
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Offers</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Locations</a></li>
+                </ul>
+            </div>
+
+            <!-- Social Media -->
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMwAAADACAMAAAB/Pny7AAAAY1BMVEU7V53///82U5vi5u9merHFy+BWbalVaqb8/P5LZKRQZqXN0uTV2uj4+fyDk762vtchRpWgrM0wT5koSpfc4OxDXaCap8pacavx8/fs7vVzhLWJl76RncR6i7hrfbCpss8VQJJ/sDjpAAADJklEQVR4nO3bbY+iMBiFYfcBlFfRAgoCMv//V67uzGQnu8ECpvTQnPvDJGNiwpXyZgu7HWOMMcYYY4wxxhhjziWiHol8/SPP/4vPj74+3EiiiqLa+7dj212+69r2eOxvt7t/jatKimIbInUSvx3ypPTqus6+q581nuelSZDnw3DZ295ObY+daXcfkrL+NV7452/Wgw/N42iIu6TJXkj+dsTGiPiDN00CjzlF52aqBBwjRVfOoEBj1CGYRQHGiPTzhgUYI1U352iBxkg868jHxlTnV9fIbWFUt8SCiTm1iyyQGLX3FlkQMXKae30BxqhhoQUQo24LTsqgGKnypRZATL94YOAwUgWhMxj1xsDgYZYfMXAY5c++78fFFJflRwwaRnbv7GVgmPf2MjCMtO/sZVgYqebcloXZv2Fh4mn3y1lTPqeXh/M/XW0Dfib+lB8yTTL0sfr4OP0X0sA87sv0vzDDpN1vYvFCOu20cphf1QYkz85aTLBXtjdyYlWuOzOn/kaG5XFmTjSW+mJ7Gycnke76n163MjA7OWgw2VBtB7PXYOrO9iZOT64aTIO+Avsj7Q2Ad9vKeXkCJvUdwiTbOZlpMaFTmGBPjJWIQY0Y1IhBjRjUiEGNGNSIQY0Y28lISos5qLHv2nrrJDqM1evmAPwoftH6FIkuSTpSqVkEqNPkRcH6E1ES5ZNfVJhXc3cIY2GJwBwmOTiEyddf7zCHGdafiDaHOTuEqTuHMM3RIUx5X/9+xhjGxkq0MUwSOYQJLCyrm8KE+c4djJUnUUxhmtYhjGfjgQdTmNLGw1umMFYeeDKFSWJ3MGFu4ZppCpOdq/UtpjB2Hng0hWltPPBkCNP0DmHK9SfNzGHSqzuYMLBxmTGFsTBp9ol56+2lEYyFSbMnJs6zcCztNo+VXQobmJfrM6/fng2Tezz2VRvX/2ejK19vrZxZwoy2yTXNsYhBjRjUiEGNGNSIQY0Y1IhBjRjUiEGNGNSIQY0Y1IhBjRjUiEGNGNSIQY0Y1IhBjRjUiEGNGNSIQY0Y1IhBjRjUiEGNGNSIQY0Y1IhBjRjUiEGNGNSImdNvEnlPuOevTYoAAAAASUVORK5CYII=" alt="Facebook"></a>
+                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/124/124021.png" alt="Twitter"></a>
+                    <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuH7c5cLpGehi0b4iQk90fXUzC9p7Ebla13w&s" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="footer-bottom">
+            <p>© 2025 Pizza Hut. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+
+    <script>
+
+function toggleMenu() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        }
+        function startCountdown(duration, elementId) {
+            let timer = duration, hours, minutes, seconds;
+            setInterval(function () {
+                hours = Math.floor(timer / 3600);
+                minutes = Math.floor((timer % 3600) / 60);
+                seconds = timer % 60;
+                document.getElementById(elementId).textContent = 
+                    hours + "h " + minutes + "m " + seconds + "s";
+                if (--timer < 0) {
+                    document.getElementById(elementId).textContent = "Expired!";
+                }
+            }, 1000);
+        }
+        
+        // Example countdown times (in seconds)
+        startCountdown(86400, "timer1"); // 24 hours
+        startCountdown(43200, "timer2"); // 12 hours
+        startCountdown(21600, "timer3"); // 6 hours
+    </script>
+
+
+</body>
+</html>
